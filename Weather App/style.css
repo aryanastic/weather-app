@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial';
+    background-image: url(images/rolling.gif);
+    background-size: cover;          /* Stretch to cover full screen */
+  background-repeat: no-repeat;    /* No repeating */
+  background-position: center;     /* Center it nicely */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.15);  /* Transparent white */
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  
+    backdrop-filter: blur(10px);            /* GLASS EFFECT */
+    -webkit-backdrop-filter: blur(10px);    /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  
+  
+  input {
+    padding: 0.5rem;
+    width: 200px;
+    margin: 1rem 0;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #weatherResult img {
+    width: 80px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  #getWeather {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #getWeather:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  #cityInput {
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-size: 1rem;
+    outline: none;
+    width: 250px; /* 👈 Custom fixed width */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  #cityInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  #cityInput:focus {
+    border-color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.03);
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffffcc;
+    font-size: 0.9rem;
+    font-family: 'Playfair Display', serif; 
+    margin-top: auto;
+    
+    
+    
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+      border-radius: 15px;
+    }
+  
+    #cityInput {
+      width: 80%;
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+  
+    #getWeather {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    #quote {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+      padding: 0.8rem 1rem;
+    }
+  }
+  
